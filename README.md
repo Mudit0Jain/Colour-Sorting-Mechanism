@@ -244,4 +244,13 @@ void loop() {
     }
   }
 }
+```
 
+## How it works
+* The TCS3200 color sensor reads the RGB values.
+* The program compares the values to determine the detected color
+* Based on the detected color, the program rotates the motor to a specific position and performs a push action
+
+## Notes
+* Adjust the delay values in the clockWise, counterClockWise, and push functions according to your specific motor and application requirements
+* Ensure that the motor driver is capable of handling the current required by your motors
